@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Проверка принадлежности числу диапазону</title>
+   <link rel="stylesheet" href="styles.css">
+   <style>
+      .content {
+         max-width: 600px;
+         margin: 20px auto;
+         padding: 20px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+         text-align: center;
+      }
+      form div {
+         margin-bottom: 15px;
+      }
+      label {
+         display: block;
+         margin-bottom: 5px;
+      }
+      input[type="text"], input[type="number"] {
+         width: 100%;
+         padding: 5px;
+      }
+      button {
+         margin: 5px;
+         padding: 10px 20px;
+         background-color: #333;
+         color: white;
+         border: none;
+         cursor: pointer;
+      }
+   </style>
+   <script>
+      function checkRange() {
+         const a = parseInt(document.getElementById("a").value);
+         const b = parseInt(document.getElementById("b").value);
+         const c = parseInt(document.getElementById("c").value);
+         const result = document.getElementById("result");
+
+         if (c >= a && c <= b) {
+            result.value = "Принадлежит";
+         } else {
+            result.value = "Не принадлежит";
+         }
+      }
+
+      function sendData() {
+         const result = document.getElementById("result").value;
+
+         if (result === "Принадлежит") {
+            // Редирект на сервер или внешний сайт при успешной проверке
+            window.location.href = "https://shutok.ru/tags/%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D0%BD/";
+         } else {
+            alert("Число C не принадлежит диапазону A-B. Данные не отправлены.");
+         }
+      }
+   </script>
+</head>
+<body>
+
+   <!-- Навигация -->
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="breeds.html">Породы котов</a></li>
+    <li><a href="care.html">Уход за котами</a></li>
+    <li><a href="gallery.html"><img src="images/gallery_icon.png" alt="Галерея" style="vertical-align: middle; width: 24px; height: 24px;"> Галерея</a></li>
+<li><a href="https://www.journal.tinkoff.ru/cathouse/" target="_blank">Внешний сайт</a></li>
+    <li><a href="passport.html">Паспорт</a></li>
+    <li><a href="dom_js.html">DOM_JS</a></li>
+    <li><a href="survey.html">Опрос про вашего кота</a></li>
+    <li><a href="range_check.html" class="active">Алгоритмическая задача</a></li>
+      </ul>
+  </ul>
+</nav>
+
+
+   <!-- Основной контент -->
+   <div class="content">
+      <h1>Принадлежит ли число C диапазону A-B?</h1>
+      <form>
+         <div>
+            <label for="a">Введите значение A:</label>
+            <input type="number" id="a" name="a" value="10">
+         </div>
+         <div>
+            <label for="b">Введите значение B:</label>
+            <input type="number" id="b" name="b" value="20">
+         </div>
+         <div>
+            <label for="c">Введите значение C:</label>
+            <input type="number" id="c" name="c" value="15">
+         </div>
+         <div>
+            <label for="result">Результат:</label>
+            <input type="text" id="result" name="result" value="не определен" readonly>
+         </div>
+         <div>
+            <button type="button" onclick="checkRange()">Проверить</button>
+            <button type="button" onclick="sendData()">Отправить</button>
+         </div>
+      </form>
+   </div>
+
+   <!-- Футер -->
+   <footer>
+      <p>&copy; 2024 Мир Котов. Все права защищены.</p>
+   </footer>
+
+</body>
+</html>
+
+

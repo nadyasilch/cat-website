@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <title>Паспорт кота</title>
+   <link rel="stylesheet" href="styles.css">
+   <style type="text/css">
+      body {
+         background-image: url('images/passpotr_shablon.png');
+         background-position: left 0px bottom -100px; 
+         background-repeat: no-repeat;
+      }
+
+      .block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9 {
+         font-weight: bold;
+      }
+      .block1 { margin-left: 100px; margin-top: 70px; font-size: 90%; }
+      .block2 { margin-left: 80px; margin-top: 30px; }
+      .block3 { margin-left: 280px; margin-top: -17px; }
+      .block4 { margin-left: 218px; margin-top: 185px; font-size: 100%; }
+      .block5 { margin-left: 225px; margin-top: 29px; }
+      .block6 { margin-left: 210px; margin-top: 4px; }
+      .block7 { margin-left: 170px; margin-top: 4px; }
+      .block8 { margin-left: 270px; margin-top: -17px; }
+      .block9 { margin-left: 230px; margin-top: 3px; }
+      .photo { margin-left: 20px; margin-top: -100px; }
+
+      .translate-btn {
+         margin: 20px;
+         padding: 10px 15px;
+         background-color: #333;
+         color: white;
+         border: none;
+         font-size: 16px;
+         cursor: pointer;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Навигация -->
+   <nav>
+      <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="breeds.html">Породы котов</a></li>
+         <li><a href="care.html">Уход за котами</a></li>
+         <li><a href="gallery.html"><img src="images/gallery_icon.png" alt="Галерея" style="vertical-align: middle; width: 24px; height: 24px;"> Галерея</a></li>
+<li><a href="https://www.journal.tinkoff.ru/cathouse/" target="_blank">Внешний сайт</a></li>
+         <li><a href="passport.html" class="active">Паспорт</a></li>
+         <li><a href="dom_js.html">DOM_JS</a></li>
+      <li><a href="survey.html">Опрос про вашего кота</a></li>
+      <li><a href="range_check.html">Алгоритмическая задача</a></li>
+      </ul>
+   </nav>
+
+   <!-- Кнопка для смены текста на латиницу и обратно -->
+   <button class="translate-btn" onclick="toggleTranslation()">Перевести на латиницу</button>
+
+   <!-- Контент страницы -->
+   <div class="block1" id="text1">УМВД РОССИИ ПО ВОЛОГОДСКОЙ ОБЛАСТИ</div>
+   <div class="block2" id="text2">07.08.2019</div>
+   <div class="block3" id="text3">770-064</div>
+   <div class="block4" id="text4">Сильченко</div>
+   <div class="block5" id="text5">Надежда</div>
+   <div class="block6" id="text6">Витальевна</div>
+   <div class="block7" id="text7">муж.</div>
+   <div class="block8" id="text8">03.02.2005</div>
+   <div class="block9" id="text9">гор.Лондон</div>
+   <div class="photo">
+      <img src="images/250567.jpg" height="140" width="120" alt="Фото кота" />
+   </div>
+
+   <!-- Скрипт для перевода текста -->
+   <script>
+      let isCyrillic = true;
+
+      function toggleTranslation() {
+         if (isCyrillic) {
+            translateToLatin();
+            document.querySelector(".translate-btn").innerText = "Перевести на кириллицу";
+         } else {
+            translateToCyrillic();
+            document.querySelector(".translate-btn").innerText = "Перевести на латиницу";
+         }
+         isCyrillic = !isCyrillic;
+      }
+
+      function translateToLatin() {
+         document.getElementById("text1").innerText = "UMVD ROSSII PO VOLOGODSKOY OBLASTI";
+         document.getElementById("text4").innerText = "Silchenko";
+         document.getElementById("text5").innerText = "Nadezhda";
+         document.getElementById("text6").innerText = "Vitalyevna";
+         document.getElementById("text7").innerText = "man";
+         document.getElementById("text9").innerText = "city London";
+      }
+
+      function translateToCyrillic() {
+         document.getElementById("text1").innerText = "УМВД РОССИИ ПО ВОЛОГОДСКОЙ ОБЛАСТИ";
+         document.getElementById("text4").innerText = "Сильченко";
+         document.getElementById("text5").innerText = "Надежда";
+         document.getElementById("text6").innerText = "Витальевна";
+         document.getElementById("text7").innerText = "муж.";
+         document.getElementById("text9").innerText = "гор.Лондон";
+      }
+   </script>
+</body>
+</html>
+
+

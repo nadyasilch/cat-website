@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея котов</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .content {
+      margin-top: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Стили для галереи */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигация -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="breeds.html">Породы котов</a></li>
+      <li><a href="care.html">Уход за котами</a></li>
+          <li><a href="gallery.html"><img src="images/gallery_icon.png" alt="Галерея" style="vertical-align: middle; width: 24px; height: 24px;"> Галерея</a></li>
+      <li><a href="https://www.catster.com" target="_blank">Внешний сайт</a></li>
+    </ul>
+  </nav>
+
+  <!-- Основной контент -->
+  <div class="content">
+    <header>
+      <h1>Галерея котов</h1>
+      <p>Здесь представлены лучшие моменты из жизни наших питомцев. Кликните на фото, чтобы увидеть его в большем размере.</p>
+    </header>
+
+    <!-- Галерея -->
+    <section class="gallery">
+      <a href="images/gallery/cat1_large.jpg" target="_blank">
+        <img src="images/gallery/cat1.jpg" alt="Кот 1">
+      </a>
+      <a href="images/gallery/cat2_large.jpg" target="_blank">
+        <img src="images/gallery/cat2.jpg" alt="Кот 2">
+      </a>
+      <a href="images/gallery/cat3_large.jpg" target="_blank">
+        <img src="images/gallery/cat3.jpg" alt="Кот 3">
+      </a>
+      <a href="images/gallery/cat4_large.jpg" target="_blank">
+        <img src="images/gallery/cat4.jpg" alt="Кот 4">
+      </a>
+      <a href="images/gallery/cat5_large.jpg" target="_blank">
+        <img src="images/gallery/cat5.jpg" alt="Кот 5">
+      </a>
+      <a href="images/gallery/cat6_large.jpg" target="_blank">
+        <img src="images/gallery/cat6.jpg" alt="Кот 6">
+      </a>
+      <a href="images/gallery/cat7_large.jpg" target="_blank">
+        <img src="images/gallery/cat7.jpg" alt="Кот 7">
+      </a>
+      <a href="images/gallery/cat8_large.jpg" target="_blank">
+        <img src="images/gallery/cat8.jpg" alt="Кот 8">
+      </a>
+      <a href="images/gallery/cat9_large.jpg" target="_blank">
+        <img src="images/gallery/cat9.jpg" alt="Кот 9">
+      </a>
+      <a href="images/gallery/cat10_large.jpg" target="_blank">
+        <img src="images/gallery/cat10.jpg" alt="Кот 10">
+      </a>
+    </section>
+  </div>
+
+  <!-- Футер -->
+  <footer>
+    <p>&copy; 2024 Мир Котов. Все права защищены.</p>
+  </footer>
+</body>
+</html>

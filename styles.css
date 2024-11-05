@@ -1,0 +1,42 @@
+/* Навигация */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  background-color: #333;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+}
+
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+

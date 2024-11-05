@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мир Котов</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Стили для улучшенного внешнего вида */
+    .intro {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .section {
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .about, .care-tips, .facts, .records, .science {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .facts ul, .care-tips ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 15px 0;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигация -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="breeds.html">Породы котов</a></li>
+      <li><a href="care.html">Уход за котами</a></li>
+          <li><a href="gallery.html"><img src="images/gallery_icon.png" alt="Галерея" style="vertical-align: middle; width: 24px; height: 24px;"> Галерея</a></li>
+      <li><a href="https://www.catster.com" target="_blank">Внешний сайт</a></li>
+    </ul>
+  </nav>
+
+  <!-- Введение -->
+  <section class="intro">
+    <h1>Добро пожаловать в Мир Котов!</h1>
+    <p>Узнайте все об этих удивительных животных, их породах, характере, уходе за ними и многом другом. Мы создаем для вас интересный мир, полный котов!</p>
+  </section>
+
+  <!-- Раздел: Обо всех котах -->
+  <section class="about section">
+    <h2>О котах</h2>
+    <p>Коты — это не просто домашние животные. Они символизируют независимость, загадочность и, конечно, уют! Ученые считают, что коты были приручены человеком более 9 тысяч лет назад. С тех пор коты остаются верными друзьями и любимцами миллионов людей по всему миру.</p>
+    <a href="breeds.html" class="button">Изучить породы котов</a>
+  </section>
+
+  <!-- Раздел: Советы по уходу -->
+  <section class="care-tips section">
+    <h2>Советы по уходу за котами</h2>
+    <p>Коты не требуют сложного ухода, но есть несколько важных вещей, которые нужно учитывать. Вот несколько советов для счастливой жизни с вашим питомцем:</p>
+    <ul>
+      <li>Выбирайте качественный корм, подходящий для возраста и здоровья вашего кота.</li>
+      <li>Регулярно очищайте лоток — коты любят чистоту!</li>
+      <li>Уделяйте внимание играм и общению. Коты, несмотря на свою независимость, любят взаимодействие с человеком.</li>
+      <li>Не забывайте о ветеринаре: профилактические осмотры помогут сохранить здоровье питомца на долгие годы.</li>
+    </ul>
+    <a href="care.html" class="button">Узнать больше о уходе за котами</a>
+  </section>
+
+  <!-- Раздел: Интересные факты -->
+  <section class="facts section">
+    <h2>Интересные факты о котах</h2>
+    <ul>
+      <li>Коты спят в среднем 12–16 часов в сутки! Это делает их одними из самых "сонных" животных.</li>
+      <li>У котов более 20 мышц, которые контролируют движения ушей, что позволяет им улавливать малейшие звуки.</li>
+      <li>Большинство котов не чувствуют сладкого вкуса. Это связано с генетической особенностью их вкусовых рецепторов.</li>
+      <li>Коты мурлычут не только от удовольствия. Иногда они мурлычут, чтобы успокоить себя, особенно если испытывают стресс или боль.</li>
+    </ul>
+  </section>
+
+  <!-- Раздел: Галерея -->
+  <section class="gallery section">
+    <h2>Наша галерея</h2>
+    <p>Здесь представлены лучшие моменты из жизни наших питомцев. Кликните на фото, чтобы увидеть его в большем размере.</p>
+    <div class="gallery">
+      <img src="images/gallery/cat1.jpg" alt="Кот 1">
+      <img src="images/gallery/cat2.jpg" alt="Кот 2">
+      <img src="images/gallery/cat3.jpg" alt="Кот 3">
+      <img src="images/gallery/cat4.jpg" alt="Кот 4">
+    </div>
+    <a href="gallery.html" class="button">Посмотреть всю галерею</a>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <p>&copy; 2024 Мир Котов. Все права защищены.</p>
+  </footer>
+</body>
+</html>

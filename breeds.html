@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Породы Котов</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Закрепленное меню */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      z-index: 1000;
+    }
+
+    /* Основные стили для навигации */
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    /* Стиль для активной ссылки */
+    nav ul li a.active {
+      background-color: #4CAF50; /* Зеленый цвет для активной вкладки */
+      color: white;
+    }
+
+    /* Стиль при наведении */
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    /* Стили для основного контента */
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .breed-section {
+      margin-bottom: 40px;
+    }
+
+    .breed-section img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Внутренняя навигация */
+    .internal-nav {
+      margin: 20px 0;
+    }
+
+    .internal-nav a {
+      margin-right: 15px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .internal-nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Верхнее навигационное меню -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="breeds.html" class="active">Породы котов</a></li>
+      <li><a href="care.html">Уход за котами</a></li>
+          <li><a href="gallery.html"><img src="images/gallery_icon.png" alt="Галерея" style="vertical-align: middle; width: 24px; height: 24px;"> Галерея</a></li>
+      <li><a href="https://www.catster.com" target="_blank">Внешний сайт</a></li>
+    </ul>
+  </nav>
+
+  <!-- Основной контент -->
+  <div class="content">
+    <header>
+      <h1>Породы Котов</h1>
+      <p>На этой странице вы найдете информацию о различных породах котов.</p>
+    </header>
+
+    <!-- Внутренняя навигация -->
+    <div class="internal-nav">
+      <a href="#british-shorthair">Британская короткошерстная</a>
+      <a href="#siamese">Сиамская кошка</a>
+      <a href="#maine-coon">Мейн-кун</a>
+      <a href="#bengal">Бенгальская кошка</a>
+      <a href="#abyssinian">Абиссинская кошка</a>
+      <a href="#persian">Персидская кошка</a>
+      <a href="#sphynx">Сфинкс</a>
+      <a href="#ragdoll">Рэгдолл</a>
+      <a href="#top">К началу</a>
+    </div>
+
+    <main>
+      <!-- Разделы пород с якорями -->
+      <section id="british-shorthair" class="breed-section">
+        <h2>Британская короткошерстная</h2>
+        <img src="images/breeds/british_shorthair.jpg" alt="Британская короткошерстная">
+        <p>Британская короткошерстная кошка — это одна из самых популярных пород в мире. Они известны своим спокойным характером, мягкой шерстью и крупным телосложением. Эти коты отлично подходят для жизни в квартире.</p>
+      </section>
+
+      <section id="siamese" class="breed-section">
+        <h2>Сиамская кошка</h2>
+        <img src="images/breeds/siamese.jpg" alt="Сиамская кошка">
+        <p>Сиамские кошки отличаются своим элегантным телосложением и большими ушами. Они очень социальные и любящие, и зачастую сильно привязываются к своему владельцу.</p>
+      </section>
+
+      <section id="maine-coon" class="breed-section">
+        <h2>Мейн-кун</h2>
+        <img src="images/breeds/maine_coon.jpg" alt="Мейн-кун">
+        <p>Мейн-куны — это одна из самых крупных домашних пород. Они обладают пушистой шерстью и кисточками на ушах, что придает им облик диких кошек. Мейн-куны очень дружелюбны и ласковы.</p>
+      </section>
+
+      <section id="bengal" class="breed-section">
+        <h2>Бенгальская кошка</h2>
+        <img src="images/breeds/bengal.jpg" alt="Бенгальская кошка">
+        <p>Бенгальские кошки имеют яркую пятнистую окраску, напоминающую леопарда. Они очень активные и любят играть, что делает их идеальными для активных владельцев.</p>
+      </section>
+
+      <section id="abyssinian" class="breed-section">
+        <h2>Абиссинская кошка</h2>
+        <img src="images/breeds/abyssinian.jpg" alt="Абиссинская кошка">
+        <p>Абиссинцы известны своим уникальным "тиккингом" на шерсти, благодаря которому каждая шерстинка имеет несколько оттенков. Они очень энергичные и любопытные, всегда ищут новые приключения.</p>
+      </section>
+
+      <section id="persian" class="breed-section">
+        <h2>Персидская кошка</h2>
+        <img src="images/breeds/persian.jpg" alt="Персидская кошка">
+        <p>Персидские кошки легко узнаются по своей длинной шерсти и приплюснутой мордочке. Они спокойные, любят комфорт и требуют регулярного ухода за шерстью.</p>
+      </section>
+
+      <section id="sphynx" class="breed-section">
+        <h2>Сфинкс</h2>
+        <img src="images/breeds/sphynx.jpg" alt="Сфинкс">
+        <p>Сфинксы — уникальные кошки без шерсти, что делает их подходящими для людей с аллергией. Они теплые на ощупь и обладают высоким интеллектом и дружелюбным характером.</p>
+      </section>
+
+      <section id="ragdoll" class="breed-section">
+        <h2>Рэгдолл</h2>
+        <img src="images/breeds/ragdoll.jpg" alt="Рэгдолл">
+        <p>Рэгдоллы получили свое название благодаря способности расслабляться, как тряпичная кукла. Эти кошки известны своим спокойным характером и любовью к хозяевам.</p>
+      </section>
+
+      <!-- Ссылка к началу страницы -->
+      <div class="internal-nav">
+        <a href="#top">К началу</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- Футер -->
+  <footer>
+    <p>&copy; 2024 Мир Котов. Все права защищены.</p>
+  </footer>
+</body>
+</html>
+

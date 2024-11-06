@@ -28,7 +28,6 @@
 </head>
 <body>
 
-   <!-- Навигация -->
    <nav>
       <ul>
          <li><a href="index.html">Главная</a></li>
@@ -42,7 +41,6 @@
       </ul>
    </nav>
 
-   <!-- Основной контент -->
    <div class="content">
       <h1>Опрос про вашего кота</h1>
       <form action="https://example.com/submit" method="POST">
@@ -52,19 +50,16 @@
             <input type="text" id="cat_name" name="cat_name" value="Барсик">
          </div>
 
-         <!-- Возраст кота -->
          <div>
             <label for="cat_age">Возраст вашего кота (лет):</label>
             <input type="number" id="cat_age" name="cat_age" value="2">
          </div>
 
-         <!-- Дата рождения кота -->
          <div>
             <label for="birth_date">Дата рождения:</label>
             <input type="date" id="birth_date" name="birth_date" value="2022-05-01">
          </div>
 
-         <!-- Пол кота -->
          <div>
             <label>Пол вашего кота:</label>
             <input type="radio" id="male" name="gender" value="Мужской" checked>
@@ -73,7 +68,6 @@
             <label for="female">Женский</label>
          </div>
 
-         <!-- Цвет шерсти кота -->
          <div>
             <label for="fur_color">Цвет шерсти вашего кота:</label>
             <select id="fur_color" name="fur_color">
@@ -85,7 +79,6 @@
             </select>
          </div>
 
-         <!-- Длина шерсти -->
          <div>
             <label>Длина шерсти:</label>
             <input type="checkbox" id="short" name="fur_length" value="Короткая">
@@ -94,16 +87,13 @@
             <label for="long">Длинная</label>
          </div>
 
-         <!-- Секретная информация (скрытое поле) -->
          <input type="hidden" name="hidden_info" value="secret_cat_info">
 
-         <!-- Характер кота -->
          <div>
             <label for="character">Опишите характер вашего кота:</label>
             <textarea id="character" name="character">Ласковый и игривый</textarea>
          </div>
 
-         <!-- Пароль для изменения анкеты -->
          <div>
             <label for="password">Пароль для изменения анкеты:</label>
             <input type="password" id="password" name="edit_password" value="12345">
@@ -111,14 +101,12 @@
 
          
 
-         <!-- Кнопка отправки -->
          <div>
             <button type="submit">Отправить анкету</button>
          </div>
       </form>
    </div>
 
-   <!-- Футер -->
    <footer>
       <p>&copy; 2024 Мир Котов. Все права защищены.</p>
    </footer>
